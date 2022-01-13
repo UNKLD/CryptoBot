@@ -15,7 +15,7 @@ bot.action("menu", (ctx) => {
   sendStartMessage(ctx);
 });
 function sendStartMessage(ctx) {
-  let startMessage = "Welcome, This bot gives you Cryptocurrency information";
+  let startMessage = "Welcome, This bot povides you with Cryptocurrency information";
   ctx.reply(startMessage, {
     reply_markup: {
       inline_keyboard: [
@@ -56,12 +56,12 @@ bot.action(priceActionList, async (ctx) => {
 
     let message = `
     Symbol: ${symbol}
-    Price: ${data.PRICE}
-    Open: ${data.OPENDAY}
-    High: ${data.HIGHDAY}
-    Low: ${data.LOWDAY}
-    Supply: ${data.SUPPLY}
-    Market Cap: ${data.MKTCAP}
+Price: ${data.PRICE}
+Open: ${data.OPENDAY}
+High: ${data.HIGHDAY}
+Low: ${data.LOWDAY}
+Supply: ${data.SUPPLY}
+Market Cap: ${data.MKTCAP}
     `;
 
     ctx.deleteMessage();
