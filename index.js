@@ -1,7 +1,5 @@
+require("dotenv").config();
 const { Telegraf } = require("telegraf");
-
-let path = process.env.CONFIG_FILE_PATH || ".env";
-require("dotenv").config({ path: path });
 const axios = require("axios");
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
@@ -15,7 +13,7 @@ bot.action("menu", (ctx) => {
   sendStartMessage(ctx);
 });
 function sendStartMessage(ctx) {
-  let startMessage = "Welcome, This bot povides you with Cryptocurrency information";
+  let startMessage = "Welcome\n This bot povides you with Cryptocurrency information";
   ctx.reply(startMessage, {
     reply_markup: {
       inline_keyboard: [
