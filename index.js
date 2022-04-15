@@ -73,5 +73,6 @@ Market Cap: ${data.MKTCAP}
     ctx.reply("Error Encountered");
   }
 });
+//Just adding dummy comments 
 console.log("bot listning");
 bot.launch();
