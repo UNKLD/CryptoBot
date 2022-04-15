@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"Dummy build command\" && exit 1",
+    "build": "echo \"Dummy build command\" && exit 0",
     "start": "node index.js"
   },
   "keywords": [],
