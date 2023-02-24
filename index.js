@@ -37,7 +37,7 @@ bot.action("price", (ctx) => {
           { text: "BCH", callback_data: "BCH" },
           { text: "LTC", callback_data: "LTC" },
         ],
-        [{ text: "Back to Main menu", callback_data: "menu" }],
+        [{ text: "Back to Menu", callback_data: "menu" }],
       ],
     },
   });
